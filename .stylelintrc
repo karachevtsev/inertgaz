@@ -270,6 +270,7 @@
         "/^return/",
         "/^each/",
         "/^while/",
+        "/^content/"
       ]
     }],
     "at-rule-no-vendor-prefix": [true, {

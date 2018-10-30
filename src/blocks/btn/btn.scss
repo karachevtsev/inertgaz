@@ -4,13 +4,15 @@
 
 $gray-lighter:                hsl(0, 0%, 80%) !default;
 $gray-lightest:               hsl(0, 0%, 90%) !default;
-$text-color:                  hsl(0, 0%, 10%) !default;
+$text-color:                  #fff;
 $line-height:                 1.5 !default;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$field-padding-vertical:      rem(15px);
+$field-padding-horizontal:    rem(5px);
 
 $border-radius:               rem(3px) !default;
+
+$button-background: #0aabe1;
 
 .btn {
 
@@ -19,20 +21,21 @@ $border-radius:               rem(3px) !default;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  min-width: rem(200px);
   margin: 0;
   padding: $field-padding-vertical  $field-padding-horizontal;
   white-space: nowrap;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: inherit;
   line-height: $line-height;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   color: $text-color;
   border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  border: 1px solid $button-background;
+  background-color: $button-background;
   background-image: none;
   cursor: pointer;
 
@@ -40,8 +43,8 @@ $border-radius:               rem(3px) !default;
   &:focus {
     text-decoration: none;
     color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    background-color: #ff7f66;
+    border-color: #ff7f66;
   }
 
   &:visited {
