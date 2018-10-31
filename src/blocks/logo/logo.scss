@@ -13,14 +13,5 @@
 
   img {
     display: block;
-    width: 75vw;
-
-    @include laptop() {
-      width: 55vw;
-    }
-
-    @include laptop-l() {
-      width: 35vw;
-    }
   }
 }
