@@ -30,7 +30,6 @@
     "./src/scss/functions.scss",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "../../node_modules/sass-rem/rem.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css"
   ],
   "addCssAfter": [
