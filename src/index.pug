@@ -7,7 +7,13 @@ block hero
   +page-hero()
 
 block content
-  p(style="height: 1000px") Содержимое страницы
+  +section('', 'products')
+    block title
+      +section-title('Наша продукция')
+    block subtitle
+      +section-subtitle('Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах')
+    block sectionContent
+      p контент секции
 
 block footer
   +page-footer()

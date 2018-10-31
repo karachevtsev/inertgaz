@@ -1,0 +1,21 @@
+//- Все примеси в этом файле должны начинаться c имени блока (section-subtitle)
+
+mixin section-subtitle(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +section-subtitle('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' section-subtitle--' + modsList[i].trim();
+      }
+    }
+
+  h3.section-subtitle(class=allMods)&attributes(attributes)!= text

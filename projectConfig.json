@@ -27,7 +27,10 @@
     "tabs": [],
     "object-fit-polyfill": [],
     "page-nav": [],
-    "phone-list": []
+    "phone-list": [],
+    "section": [],
+    "section-title": [],
+    "section-subtitle": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

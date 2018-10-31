@@ -1,0 +1,21 @@
+//- Все примеси в этом файле должны начинаться c имени блока (section-title)
+
+mixin section-title(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +section-title('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' section-title--' + modsList[i].trim();
+      }
+    }
+
+  h2.section-title(class=allMods)&attributes(attributes)!= text
