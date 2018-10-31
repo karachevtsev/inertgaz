@@ -12,7 +12,6 @@ mixin main-nav(selectedID)
   include main-nav.data.pug
 
   nav.main-nav#nav&attributes(attributes)
-    +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
     ul.main-nav__list
       each menuItem in mainMenu
         +main-nav-item(selectedID, menuItem, 1)

@@ -17,17 +17,15 @@ mixin page-header(mods)
       }
     }
 
-  header.page-header(class=sallMods, role='banner')&attributes(attributes)
+  header.page-header.js-page-header(class=sallMods, role='banner')&attributes(attributes)
     .page-header__inner
-      .page-header__content
-        .page-header__logo
-          +logo('/')
-            img(src='img/logo.svg', alt='ИнертГаз  - продажа и доставка гелия Киев Украина', width='772', height='342')
-
-        h1.page-header__title Реализация инертных газов
-
-        .page-header__actions
-          .page-header__actions-btn
-            +btn('Продукция')(href='#')
-          .page-header__actions-btn
-            +btn('Контакты')(href='#')
+        .page-header__row
+          .page-header__logo
+            +logo('/')
+              img(src='img/logo--inverse.svg', alt='ИнертГаз  - продажа и доставка гелия Киев Украина', width='', height='')
+          .page-header__menu
+            +main-nav()
+          .page-header__contacts
+            +phone-list()
+          .page-header__toggler
+            +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav-toggler')

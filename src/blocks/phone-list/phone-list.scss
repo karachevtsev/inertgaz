@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока phone-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.phone-list {
+
+  $block-name:                &; // #{$block-name}__element
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__number {
+    text-decoration: none;
+    font-size: rem(14px);
+    color: $site-brand-color;
+  }
+}

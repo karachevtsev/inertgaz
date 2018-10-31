@@ -1,0 +1,27 @@
+//- Все примеси в этом файле должны начинаться c имени блока (phone-list)
+
+mixin phone-list(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +phone-list('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' phone-list--' + modsList[i].trim();
+      }
+    }
+
+  ul.phone-list(class=allMods)&attributes(attributes)
+    li.phone-list__item
+      a.phone-list__number(href="tel:+38(093)5132000") +38 (093) 5132000
+    li.phone-list__item
+      a.phone-list__number(href="tel:+38(097)4868606") +38 (097) 4868606
+    li.phone-list__item
+      a.phone-list__number(href="tel:+38(050)4143066") +38 (050) 4143066

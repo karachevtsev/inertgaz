@@ -8,6 +8,7 @@
     "main-nav": [],
     "close": [],
     "burger": [],
+    "page-hero": [],
     "label": [],
     "loader": [],
     "btn": [],
@@ -24,7 +25,9 @@
     "off-canvas": [],
     "modal": [],
     "tabs": [],
-    "object-fit-polyfill": []
+    "object-fit-polyfill": [],
+    "page-nav": [],
+    "phone-list": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

@@ -63,7 +63,8 @@ $screen-sm:                   480px;
 $screen-md:                   768px;
 $screen-lg:                   992px;
 $screen-xl:                   1200px;
-$screen-xxl:                  1800px;
+$screen-xxl:                  $screen-xl;
+//$screen-xxl:                  1800px;
 
 $container-sm:                100%;
 $container-md:                100%;
@@ -95,3 +96,5 @@ $toggler-part-height:         3px;
 $toggler-part-bg-color:       #000;
 
 $z-index-modal:               100;
+
+$site-brand-color:            #0aabe1 !default;

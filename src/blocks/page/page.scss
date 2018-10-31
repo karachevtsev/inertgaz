@@ -29,6 +29,18 @@
     flex-grow: 1;
   }
 
+  &__navigation {
+    @include container();
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    background: #fff;
+  }
+
   &__footer-wrapper {
     flex-shrink: 0;
   }
