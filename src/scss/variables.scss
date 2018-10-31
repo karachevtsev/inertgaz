@@ -38,8 +38,8 @@ $font-size--root:             16px;
 
 $font-size:                   1rem; // rem(16px)
 
-$font-size--h1:               rem(40px);
-$font-size--h2:               rem(32px);
+$font-size--h1:               rem(35px);
+$font-size--h2:               rem(30px);
 $font-size--h3:               rem(24px);
 $font-size--h4:               rem(18px);
 $font-size--h5:               rem(16px);
@@ -49,10 +49,10 @@ $font-size--small:            80%;
 
 $line-height:                 1.5;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family:                 'PT Sans', -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      SFMono-Regular, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
-$font-family--headings:       $font-family;
+$font-family--headings:       'PT Sans Narrow', $font-family;
 
 
 
@@ -82,8 +82,8 @@ $grid-gutter-width:           rem(30px);
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      rem(15px);
+$field-padding-horizontal:    rem(5px);
 
 $border-radius:               rem(3px);
 $opacity:                     0.7;

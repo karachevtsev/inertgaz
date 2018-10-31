@@ -1,7 +1,5 @@
 // Этот блок ответственен ТОЛЬКО за типографику проекта.
 // Не пишите тут какую-либо стороннюю стилизацию.
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Sans:400,700&subset=cyrillic');
-
 $gray:                        hsl(0, 0%, 50%) !default;
 $gray-lighter:                hsl(0, 0%, 80%) !default;
 $gray-lightest:               hsl(0, 0%, 90%) !default;
@@ -24,7 +22,7 @@ $line-height:                 1.5 !default;
 $font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif !default;
 $font-family--monospace:      SFMono-Regular, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
-$font-family--headings:       'PT Sans Narrow', sans-serif;
+$font-family--headings:       $font-family !default;
 
 
 $text-color:                  hsl(0, 0%, 10%) !default;
@@ -36,14 +34,44 @@ $border-radius:               3px !default;
 
 
 
-// @font-face {
-//   font-family: 'FONTNAME';
-//   src: url('../fonts/FONTNAME.woff2') format('woff2'),
-//        url('../fonts/FONTNAME.woff') format('woff'),
-//        url('../fonts/FONTNAME.ttf')  format('truetype');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src:
+    url('../fonts/pt-sans-narrow-v9-cyrillic_latin-regular.woff2')  format('woff2'),
+    url('../fonts/pt-sans-narrow-v9-cyrillic_latin-regular.woff')  format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src:
+    url('../fonts/pt-sans-narrow-v9-cyrillic_latin-700.woff2')  format('woff2'),
+    url('../fonts/pt-sans-narrow-v9-cyrillic_latin-700.woff')  format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'PT Sans';
+  src:
+    url('../fonts/pt-sans-v9-cyrillic_latin-regular.woff2')  format('woff2'),
+    url('../fonts/pt-sans-v9-cyrillic_latin-regular.woff')  format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'PT Sans';
+  src:
+    url('../fonts/pt-sans-v9-cyrillic_latin-700.woff2')  format('woff2'),
+    url('../fonts/pt-sans-v9-cyrillic_latin-700.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
 
 
 
