@@ -21,4 +21,11 @@
     margin-bottom: rem(30px);
     text-align: center;
   }
+
+  &--hellium {
+    background: url(../img/bg-hellium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

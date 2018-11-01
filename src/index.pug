@@ -7,13 +7,24 @@ block hero
   +page-hero()
 
 block content
-  +section('', 'products')
-    block title
-      +section-title('Наша продукция')
-    block subtitle
-      +section-subtitle('Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах')
-    block sectionContent
-      +product()
+
+  section#products.section
+    .section__inner
+      .section__title
+        +section-title('Наша продукция')
+      .section__subtitle
+        +section-subtitle('Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах')
+      .section__content
+        +product()
+
+  section#hellium.section.section--hellium
+    .section__inner
+      .section__title
+        +section-title('Гелий')
+      .section__subtitle
+        +section-subtitle('Гелий обладает второй после водорода распространенностью во Вселенной. Благодаря отличным свойствам гелий технический сегодня используется во многих сферах нашей жизнедеятельности')
+      .section__content
+        +hellium()
 
 block footer
   +page-footer()
