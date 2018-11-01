@@ -27,19 +27,16 @@
   }
 
   &__row {
-
     @include row();
     height: 90px;
     align-items: center;
   }
 
   &__logo {
-
     @include col();
     @include col(xs, 6);
 
     @include laptop() {
-
       @include col(md, 3);
     }
   }
@@ -59,6 +56,7 @@
 
   &__contacts {
     display: none;
+
     @include laptop() {
       @include col();
       @include col(md, 2);
@@ -76,6 +74,7 @@
     @include col();
     @include col(xs, 6);
     text-align: right;
+
     @include laptop() {
       display: none;
     }

@@ -30,7 +30,9 @@
     "phone-list": [],
     "section": [],
     "section-title": [],
-    "section-subtitle": []
+    "section-subtitle": [],
+    "product": [],
+    "product-info": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

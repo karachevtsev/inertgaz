@@ -5,7 +5,7 @@
 .section {
 
   $block-name:                &; // #{$block-name}__element
-  padding: rem(120px) 0;
+  padding: rem(90px) 0;
 
   &__inner {
 
@@ -18,7 +18,7 @@
   }
 
   &__subtitle {
-    margin-bottom: rem(50px);
+    margin-bottom: rem(30px);
     text-align: center;
   }
 }
