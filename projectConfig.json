@@ -33,7 +33,8 @@
     "section-subtitle": [],
     "product": [],
     "product-info": [],
-    "hellium": []
+    "hellium": [],
+    "services": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
