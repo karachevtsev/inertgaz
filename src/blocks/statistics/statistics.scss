@@ -1,0 +1,14 @@
+// В этом файле должны быть стили для БЭМ-блока statistics, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.statistics {
+
+  $block-name:                &; // #{$block-name}__element
+  padding: rem(50px) 0;
+  background: $site-brand-color;
+
+  &__inner {
+    @include container();
+  }
+}

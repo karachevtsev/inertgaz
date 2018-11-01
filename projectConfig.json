@@ -34,7 +34,9 @@
     "product": [],
     "product-info": [],
     "hellium": [],
-    "services": []
+    "services": [],
+    "statistics": [],
+    "statistics-list": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

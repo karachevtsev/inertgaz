@@ -1,0 +1,77 @@
+// В этом файле должны быть стили для БЭМ-блока statistics-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.statistics-list {
+
+  $block-name:                &; // #{$block-name}__element
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: rem(130px) rem(10px) rem(10px) rem(10px);
+    font-size: rem(18px);
+    text-align: center;
+    color: #fff;
+
+    @include tablet() {
+      padding-top: rem(150px);
+      padding-bottom: rem(30px);
+    }
+
+    &:before {
+      $width: rem(100px);
+      content: '';
+      position: absolute;
+      top: rem(20px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: $width;
+      height: $width;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__item-counter {
+    font-size: rem(24px);
+  }
+
+  &__item--clients {
+
+    &:before {
+      background-image: url(../img/clients.svg);
+    }
+  }
+
+  &__item--balloons {
+
+    &:before {
+      background-image: url(../img/balloons.svg);
+    }
+  }
+
+  &__item--shipping {
+
+    &:before {
+      background-image: url(../img/shipping.svg);
+    }
+  }
+
+  &__item--partners {
+
+    &:before {
+      background-image: url(../img/partners.svg);
+    }
+  }
+}
