@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/karachevtsev/inertgaz"
   },
   "scripts": {
     "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
@@ -42,6 +42,7 @@
     "gulp-cleancss": "^0.2.2",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-html-beautify": "^1.0.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.0.0",
