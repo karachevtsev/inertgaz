@@ -42,7 +42,8 @@
     "gallery-item": [],
     "gallery": [],
     "advantages": [],
-    "advantages-list": []
+    "advantages-list": [],
+    "contacts": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

@@ -32,8 +32,33 @@ mixin form(mods)
     }
 
   form.form(class=allMods)&attributes(attributes)
-    block
-
+    +field-text({
+      attrs: {
+        placeholder: 'Имя',
+        required: 'required'
+      }
+    })
+    +field-text({
+      attrs: {
+        placeholder: 'Фамилия'
+      }
+    })
+    +field-text({
+      attrs: {
+        placeholder: 'Номер телефона',
+        required: 'required'
+      }
+    })
+    +field-text({
+      isTextarea: true,
+      mods: '',
+      val: '',
+      attrs: {
+        name: 'comment',
+        placeholder: 'Сообщение'
+      }
+    })
+    button.btn.btn--form(type="submit") Узнать цены
 
 
 mixin fieldset(legend, mods)

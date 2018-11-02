@@ -34,11 +34,34 @@
     text-align: center;
   }
 
+  &__form {
+
+    @include tablet() {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__form-container {
+    @include tablet() {
+      @include col();
+      @include col(xs, 8);
+    }
+
+    @include laptop() {
+      @include col(md, 6);
+    }
+  }
+
   &--hellium {
     background-image: url(../img/bg-hellium.jpg);
   }
 
   &--about {
     background-image: url(../img/bg-about.jpg);
+  }
+
+  &--contacts {
+    background-image: url(../img/bg-contacts.png);
   }
 }

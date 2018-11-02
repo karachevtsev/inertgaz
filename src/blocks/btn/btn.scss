@@ -69,30 +69,8 @@ $button-background: #0aabe1;
     }
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
-
-
-
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+  &--form {
+    display: block;
+    width: 100%;
+  }
 }
