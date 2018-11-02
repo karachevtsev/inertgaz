@@ -15,7 +15,7 @@ $transition-time:             0.3s !default;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #000;
+  background-color: $site-brand-color;
   color: transparent;
   font: 0/0 a;
   // см. bg-img/to-up.svg
@@ -25,6 +25,10 @@ $transition-time:             0.3s !default;
   background-position: center;
   transform: rotate(180deg);
   transition: opacity $transition-time;
+
+  &:hover {
+    background-color: lighten($site-brand-color, 10%);
+  }
 
   .js & {
     opacity: 0;

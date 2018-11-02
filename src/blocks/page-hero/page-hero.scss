@@ -8,24 +8,21 @@
 
   &__inner {
     position: relative;
-
     min-height: 100vh;
-
     background-image: url(../img/header-slide.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 
     &:before {
       content: '';
-
       position: absolute;
       z-index: 1;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-
       width: 100%;
       background: rgba(0, 0, 0, 0.7);
     }
@@ -37,8 +34,6 @@
     position: relative;
     z-index: 2;
     min-height: inherit;
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;

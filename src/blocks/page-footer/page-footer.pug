@@ -19,4 +19,12 @@ mixin page-footer(mods)
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
     .page-footer__inner
-      p Прижатый Футер
+      .page-footer__content
+        p.page-footer__copyright
+          | ©
+          =" "
+          strong ООО «ИнертГаз»
+          =" "
+          span.js-footer-date 2018,
+          =" "
+          | все права защищены
