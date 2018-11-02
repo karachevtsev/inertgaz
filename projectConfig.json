@@ -2,6 +2,7 @@
   "blocks": {
     "page": [],
     "typo": [],
+    "sprite-svg": [],
     "page-header": [],
     "page-footer": [],
     "logo": [],
@@ -36,7 +37,10 @@
     "hellium": [],
     "services": [],
     "statistics": [],
-    "statistics-list": []
+    "statistics-list": [],
+    "about": [],
+    "gallery-item": [],
+    "gallery": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

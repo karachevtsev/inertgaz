@@ -1,0 +1,22 @@
+//- Все примеси в этом файле должны начинаться c имени блока (gallery-item)
+
+mixin gallery-item(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +gallery-item('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' gallery-item--' + modsList[i].trim();
+      }
+    }
+
+  .gallery-item(class=allMods)&attributes(attributes)
+    .gallery-item__inner!= text

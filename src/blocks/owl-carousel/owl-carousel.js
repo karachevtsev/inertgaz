@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-  $("#promo").owlCarousel({
+  $("#gallery").owlCarousel({
     items: 3,
-    nav: true,
     loop: true,
     center: true,
+    dots: false,
+    nav: false,
     responsive : {
       0 : {
         items: 1,
-        nav: true,
         loop: true,
         center: true,
       },

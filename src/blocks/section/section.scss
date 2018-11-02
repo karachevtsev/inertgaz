@@ -6,6 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element
   padding: rem(90px) 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &__inner {
 
@@ -22,10 +25,19 @@
     text-align: center;
   }
 
+  &__about {
+    margin-bottom: rem(60px);
+  }
+
+  &__gallery {
+    text-align: center;
+  }
+
   &--hellium {
-    background: url(../img/bg-hellium.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/bg-hellium.jpg);
+  }
+
+  &--about {
+    background-image: url(../img/bg-about.jpg);
   }
 }

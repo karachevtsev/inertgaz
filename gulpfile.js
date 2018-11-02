@@ -324,7 +324,7 @@ gulp.task('pug', function() {
     result = result + '</pre>\n';
     result = result.replace(/<code><\/code>/g, '<code>&nbsp;</code>');
     return result;
-  }
+  };
 
   return gulp.src([
       dirs.srcPath + '*.pug',
@@ -433,7 +433,7 @@ gulp.task('deploy', function() {
   var ghPagesUrl;
   if (repoUrl) {
     var urlParts = repoUrl.split('/');
-    if (urlParts[2] == 'github.com') {
+    if (urlParts[2] === 'github.com') {
       ghPagesUrl = 'http://' + urlParts[3] + '.github.io/' + urlParts[4] + '/';
     }
     console.log('---------- ' + ghPagesUrl);
