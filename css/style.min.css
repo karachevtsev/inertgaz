@@ -598,7 +598,8 @@ pre {
       -webkit-transition: width 150ms linear;
       transition: width 150ms linear; }
 .main-nav__link:hover, .main-nav__link:focus {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #0aabe1; }
 .main-nav__link:hover:before, .main-nav__link:focus:before {
         width: 100%; }
 .main-nav__link:visited {
