@@ -44,6 +44,7 @@ $transition-time:             0.3s !default;
       .js #{$block-name}--open & {
         max-height: 100vh;
         transition: max-height 0.6s;
+        box-shadow: 0 7px 9px -5px rgba(0, 0, 0, 0.35);
       }
     }
 
@@ -97,8 +98,11 @@ $transition-time:             0.3s !default;
       text-decoration: none;
       color: $site-brand-color;
 
-      &:before {
-        width: 100%;
+      @include laptop() {
+
+        &:before {
+          width: 100%;
+        }
       }
     }
 

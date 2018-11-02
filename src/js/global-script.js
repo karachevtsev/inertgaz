@@ -65,7 +65,10 @@ $( document ).ready(function() {
     $('#gallery').trigger('prev.owl.carousel');
   });
 
-  $('.js-footer-date').text(new Date().getFullYear())
+  $('.js-footer-date').text(new Date().getFullYear());
+
+  var mainNav = $('#nav');
+  var burger = $('.burger');
 
   $('a[href^="#"]').on('click', function () {
     let target = $(this).attr('href');
@@ -74,7 +77,15 @@ $( document ).ready(function() {
         scrollTop: $(target).offset().top
       },
       800
-    )
+    );
+    if (mainNav.hasClass('main-nav--open')) {
+      mainNav.removeClass('main-nav--open');
+    }
+
+    if (burger.hasClass('burger--close')) {
+      burger.removeClass('burger--close');
+    }
   });
+
 
 });
