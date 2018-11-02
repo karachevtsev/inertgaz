@@ -95,6 +95,7 @@ $transition-time:             0.3s !default;
     &:hover,
     &:focus {
       text-decoration: none;
+      color: $site-brand-color;
 
       &:before {
         width: 100%;
