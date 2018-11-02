@@ -59,8 +59,22 @@ $( document ).ready(function() {
     e.preventDefault();
     $('#gallery').trigger('next.owl.carousel');
   });
+
   $('.js-control-prev').on('click', function(e){
     e.preventDefault();
     $('#gallery').trigger('prev.owl.carousel');
   });
+
+  $('.js-footer-date').text(new Date().getFullYear())
+
+  $('a[href^="#"]').on('click', function () {
+    let target = $(this).attr('href');
+    $('html, body').animate(
+      {
+        scrollTop: $(target).offset().top
+      },
+      800
+    )
+  });
+
 });
