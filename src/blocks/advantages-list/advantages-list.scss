@@ -1,0 +1,35 @@
+// В этом файле должны быть стили для БЭМ-блока advantages-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.advantages-list {
+
+  $block-name:                &; // #{$block-name}__element
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    padding-left: rem(40px);
+    margin-bottom: rem(16px);
+    font-size: rem(18px);
+
+    &:before {
+      $width: 23px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: $width;
+      height: $width;
+      background: url(../img/check.svg) no-repeat center;
+      background-size: contain;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

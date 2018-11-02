@@ -9,13 +9,13 @@ mixin product(text, mods)
         +product('Текст', 'some-mod')
 
   -
-  // список модификаторов
+    // список модификаторов
     var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-    var modsList = mods.split(',');
-    for (var i = 0; i < modsList.length; i++) {
-      allMods = allMods + ' product--' + modsList[i].trim();
-    }
+      if(typeof(mods) !== 'undefined' && mods) {
+        var modsList = mods.split(',');
+        for (var i = 0; i < modsList.length; i++) {
+          allMods = allMods + ' product--' + modsList[i].trim();
+      }
     }
 
   .product(class=allMods)&attributes(attributes)

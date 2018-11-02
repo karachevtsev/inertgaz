@@ -40,7 +40,9 @@
     "statistics-list": [],
     "about": [],
     "gallery-item": [],
-    "gallery": []
+    "gallery": [],
+    "advantages": [],
+    "advantages-list": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
