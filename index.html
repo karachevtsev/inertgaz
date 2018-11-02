@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#5bbad5">
+  <meta name="theme-color" content="#000">
+  <meta name="msapplication-navbutton-color" content="#000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script>document.addEventListener('DOMContentLoaded', function(){
+  if (window.isMobile !== undefined) {
+    // console.log(isMobile);
+    if(isMobile.any) {
+      var rootClasses = ' is-mobile';
+      for (key in isMobile) {
+        if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+        if(typeof isMobile[key] === 'object' && key !== 'other') {
+          for (type in isMobile[key]) {
+            if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+          }
+        }
+      }
+      document.documentElement.className += rootClasses;
+    }
+  }
+  else {
+    console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+  }
+});
+</script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header js-page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="page-header__row">
+            <div class="page-header__logo"><a class="logo" href="/"><img src="img/logo--inverse.svg" alt="ИнертГаз  - продажа и доставка гелия Киев Украина" width="" height=""/></a></div>
+            <div class="page-header__menu">
+              <nav class="main-nav" id="nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a class="main-nav__link" href="#home">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#products">Продукция</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#services">Наши услуги</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#about">О Компании</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="page-header__contacts">
+              <ul class="phone-list">
+                <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(093)5132000">+38 (093) 5132000</a></li>
+                <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(097)4868606">+38 (097) 4868606</a></li>
+                <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(050)4143066">+38 (050) 4143066</a></li>
+              </ul>
+            </div>
+            <div class="page-header__toggler"><button class="burger main-nav-toggler" aria-label="Показать главное меню" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button></div>
+          </div>
+        </div>
+      </header>
+      <div class="page-hero" id="home" role="banner">
+        <div class="page-hero__inner">
+          <div class="page-hero__content">
+            <div class="page-hero__logo"><a class="logo" href="/"><img src="img/logo.svg" alt="Компания «ИнертГаз» - продажа и доставка гелия Киев Украина" width="772" height="342"/></a></div>
+            <h1 class="page-hero__title">Реализация инертных газов</h1>
+            <div class="page-hero__actions">
+              <div class="page-hero__actions-btn"><a class="btn" href="#">Продукция</a></div>
+              <div class="page-hero__actions-btn"><a class="btn" href="#">Контакты</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section js-section" id="products">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Наша продукция</h2>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах</h3>
+          </div>
+          <div class="section__content">
+            <div class="product">
+              <div class="product__inner">
+                <div class="product__info">
+                  <ul class="product-info">
+                    <li class="product-info__item"><strong class="product-info__item-title">Технический гелий 99,8 - 40л, 20л,10л</strong> Газообразный технический (99,8%). Долю 0,2% занимают примеси азота, водорода, кислорода и аргона. Наиболее часто используется в индустрии развлечений при заполнении воздушных шаров.</li>
+                    <li class="product-info__item"><strong class="product-info__item-title">Гелий марка А (99,995%) - 40л, 10л</strong> Марка А (99,995%). Для поиска утечек в трубопроводах, Используется как компонент рабочего тела гелий-неоновых лазеров. Применяют в дыхательных смесях при погружениях и работах на глубине.</li>
+                    <li class="product-info__item"><strong class="product-info__item-title">Гелий особой чистоты (99,999%) - 40л, 10л</strong> Используетсяпри резке, сварке, в дыхательных смесях для глубоководных погружений, а так же металлургии в качестве защитного инертного газа дял выплавки чистых металлов.</li>
+                    <li class="product-info__item"><strong class="product-info__item-title">Гелий 99,9999% - 40л</strong> Марка 6,0. Широко применяется в лазерных технологиях, хроматографии, то есть там, где критически важно отсутствие любых примесей.</li>
+                  </ul>
+                </div>
+                <div class="product__image"><img src="img/hellium-balon.png" alt="Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах" width="238" height="450"/></div>
+                </div>
+                <div class="product__actions"><a class="btn" href="#">Узнать цены</a></div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="section section--hellium" id="hellium">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Гелий</h2>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">Гелий обладает второй после водорода распространенностью во Вселенной. Благодаря отличным свойствам гелий технический сегодня используется во многих сферах нашей жизнедеятельности</h3>
+          </div>
+          <div class="section__content">
+            <ul class="hellium">
+              <li class="hellium__item"><strong class="hellium__item-title">Свойства газа </strong>
+                <p class="hellium__item-text">Гелий – это абсолютно безопасный технический газ, который относится к группе безвредных благородных газов. Он не имеет цвета, вкуса, запаха и не содержит токсинов. Благодаря таким качествам, гелий разрешено применять в местах массового скопления людей. Газообразный гелий инертен и не представляет опасности для человека.</p>
+                <p class="hellium__item-text">Важно отметить, что гелий полностью безвреден не только для жизни людей, а так же для окружающей среды. Гелий значительно легче воздуха, поэтому он не требует утилизации его остатков в баллонах. Этот инертный газ полностью безвреден, так как рассеивается в верхних слоях атмосферы Земли.</p>
+              </li>
+              <li class="hellium__item"><strong class="hellium__item-title">Где применяется гелий </strong>
+                <p class="hellium__item-text">Гелий широко применяют в различных отраслях жизнедеятельности. Он используется в магнитных томографах, микроэлектронике, в научных исследованиях, медицине, охлаждении ядерных реакторов, а также благодаря низкой плотности и негорючести его используют для наполнения воздушных шаров, аэростатов и дирижаблей.</p>
+                <p class="hellium__item-text">К тому же, исключительные свойства гелия дают возможность применять его в металлургии во время сварки цветных металлов в качестве защитной атмосферы. В смеси с другими благородными газами его используют в газовых лазерах и в наружной неоновой рекламе.</p>
+              </li>
+              <li class="hellium__item"><strong class="hellium__item-title">Транспортировка и хранение </strong>
+                <p class="hellium__item-text">В основном газ хранится и перевозится в стальных баллонах темно-красного или коричневого цвета, которые оснащены правой резьбой. Как правило используют гелиевые емкости объемом 10, 20, и 40 литров. При транспортировке баллоны помещаются в специализированные контейнеры. В случае соблюдения основных правил перевозку гелиевых баллонов можно осуществлять любым видом транспорта.</p>
+                <p class="hellium__item-text">Приобрести газообразный гелий по доступной цене и заказать удобную доставку баллонов можно в компании ООО <strong>«ИнертГаз»,</strong> которая отличается высоким сервисом услуг и качеством предоставляемой продукции.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--services js-section" id="services">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Наши услуги</h2>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">Компания «ИнертГаз» предоставляет широкий спектр услуг</h3>
+          </div>
+          <div class="section__content">
+            <ul class="services">
+              <li class="services__item services__item--selling"><strong class="services__item-title">Продажа гелия</strong> Компания предлагает качественный гелий украинского производства</li>
+              <li class="services__item services__item--delivery"><strong class="services__item-title">Срочная доставка</strong>Доставка по Киеву с возможностью срочной доставки "в день заказа"</li>
+              <li class="services__item services__item--support"><strong class="services__item-title">Клиентская поддержка</strong> Оформление заказа по вашей заявке с доставкой по всем регионам Украины</li>
+              <li class="services__item services__item--renewal"><strong class="services__item-title">Забота о клиентах</strong> Постоянное обновление и наличие товара на складе</li>
+              <li class="services__item services__item--repair"><strong class="services__item-title">Ремонт и обслуживание</strong> Ремонт и техническое освидетельствование газовых баллонов</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="statistics">
+        <div class="statistics__inner">
+          <ul class="statistics-list">
+            <li class="statistics-list__item statistics-list__item--clients"><span class="statistics-list__item-counter">300</span> Счастливых клиентов</li>
+            <li class="statistics-list__item statistics-list__item--balloons"><span class="statistics-list__item-counter">13,275</span> Проданых баллонов</li>
+            <li class="statistics-list__item statistics-list__item--shipping"><span class="statistics-list__item-counter">850</span> Доставок по Украине</li>
+            <li class="statistics-list__item statistics-list__item--partners"><span class="statistics-list__item-counter">20</span> Партнеров по Украине</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="section section--about js-section" id="about">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Про Компанию</h2>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">ООО «ИнертГаз» рады приветствовать вас на нашем сайте</h3>
+          </div>
+          <div class="section__about">
+            <div class="about">
+              <div class="about__inner">
+                <p><strong>ООО «ИнертГаз»</strong> - это компания, которая работает в сфере услуг реализации инертных газов более 10 лет. Мы обеспечиваем поставки благородных газов, предоставляем качественный ремонт и свидетельства на баллоны в кратчайшие сроки.</p>
+                <p>Компания <strong>ООО «ИнертГаз»</strong> является официальным представителем украинского производителя инертных газов «Криоин Инжиниринг» в городе Киев и Киевской области.</p>
+                <p>Наша главная задача, чтобы клиент был доволен качеством нашей продукции, сроком выполненной доставки и нашими услугами.</p>
+                <p>В зависимости от ваших целей, вы сможете подобрать любой газ из списка нашей продукции, которые соответствуют всем стандартам качества. При заключении договора на долгосрочные поставки, наша компания может предоставить постоянным клиентам значительные привилегии. За уточнением цен и условий работы обращайтесь к нашими квалифицированным менеджерам.</p>
+                <p>Поставка технических газов от <strong>ООО «ИнертГаз»</strong>производится с обязательным учетом индивидуальных потребностей и пожеланий каждого клиента. Это касается, прежде всего, планов клиента по расходованию газа, особенностей снабжаемого газом объекта.</p>
+                <p>Мы гарантируем регулярность и стабильность газоснабжения. В своей работе <strong>ООО «ИнертГаз»</strong> использует самые разные способы поставки технических газов, которые удобны нашим клиентам. Более подробную информацию о каждом из поставляемых нами газов вы сможете получить, обратившись к странице интересующего вас газа.</p>
+                <p>Мы упорно работаем для того, чтобы достичь высокого уровня обслуживания наших клиентов!</p>
+                <p>Компания <strong>ООО «ИнертГаз»</strong> всегда рада сотрудничеству с Вами!</p>
+              </div>
+            </div>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">Постоянное обновление и наличие товара на складе</h3>
+          </div>
+          <div class="section__gallery">
+            <div class="gallery">
+              <div class="gallery__inner">
+                <div class="owl-carousel" id="gallery">
+                  <div class="gallery-item"><img src="../img/photo-1.jpg" alt="ИнертГаз"/></div>
+                    <div class="gallery-item"><img src="../img/photo-2.jpg" alt="ИнертГаз"/></div>
+                      <div class="gallery-item"><img src="../img/photo-3.jpg" alt="ИнертГаз"/></div>
+                        <div class="gallery-item"><img src="../img/photo-4.jpg" alt="ИнертГаз"/></div>
+                          <div class="gallery-item"><img src="../img/photo-5.jpg" alt="ИнертГаз"/></div>
+                            <div class="gallery-item"><img src="../img/photo-6.jpg" alt="ИнертГаз"/></div>
+                            </div>
+                          </div>
+                          <div class="gallery__controls"><span class="js-control-prev gallery__controls-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.494 31.494" width="30" height="27"><path d="M10.273 5.01c.444-.445 1.143-.445 1.587 0 .43.428.43 1.142 0 1.57l-8.047 8.047h26.554c.62 0 1.127.492 1.127 1.11 0 .62-.508 1.128-1.127 1.128H3.813l8.047 8.032c.43.444.43 1.16 0 1.587-.444.444-1.143.444-1.587 0L.32 16.532c-.428-.43-.428-1.143 0-1.57l9.953-9.953z" fill="#00a7dd"></path></svg></span><span class="js-control-next gallery__controls-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.49 31.49" width="30" height="27"><path d="M21.205 5.007c-.43-.444-1.143-.444-1.587 0-.43.43-.43 1.143 0 1.57l8.047 8.048H1.11c-.618 0-1.11.493-1.11 1.112 0 .62.492 1.127 1.11 1.127h26.555l-8.047 8.032c-.43.444-.43 1.16 0 1.587.444.444 1.16.444 1.587 0l9.952-9.952c.444-.426.444-1.14 0-1.57l-9.952-9.95z" fill="#00a7dd"></path></svg></span></div>
+                        </div>
+                      </div>
+                    </div>
+      </section>
+
+      <section class="section section--advantages" id="advantages">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Почему именно мы</h2>
+          </div>
+          <div class="section__content">
+            <div class="advantages">
+              <div class="advantages__inner">
+                <div class="advantages__info">
+                  <ul class="advantages-list">
+                    <li class="advantages-list__item">100% гарантия качества продукции</li>
+                    <li class="advantages-list__item">Всегда хорошие и приятные цены</li>
+                    <li class="advantages-list__item">Официальные предствители Криоин Инжиниринг в г.Киев</li>
+                    <li class="advantages-list__item">Технические газы украинского производства</li>
+                    <li class="advantages-list__item">Различные способы оплаты и доставки заказа</li>
+                    <li class="advantages-list__item">Каждая покупка — это быстро, качественно, надёжно!</li>
+                  </ul>
+                </div>
+                <div class="advantages__image"><img src="img/hellium-balon.png" alt="Компания «ИнертГаз» реализует по доступным ценам гелий в баллонах" width="238" height="450"/></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="section section--contacts js-section" id="contacts">
+        <div class="section__inner">
+          <div class="section__title">
+            <h2 class="section-title">Контакты</h2>
+          </div>
+          <div class="section__contacts">
+            <div class="contacts">
+              <div class="contacts__item contacts__item--address">
+                <p>Украина<br/>г. Киев<br/>ул. Вербовая 8Б</p>
+              </div>
+              <div class="contacts__item contacts__item--phone">
+                <ul class="phone-list">
+                  <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(093)5132000">+38 (093) 5132000</a></li>
+                  <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(097)4868606">+38 (097) 4868606</a></li>
+                  <li class="phone-list__item"><a class="phone-list__number" href="tel:+38(050)4143066">+38 (050) 4143066</a></li>
+                </ul>
+              </div>
+              <div class="contacts__item contacts__item--email">
+                <p>inertgas.ltd@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="section__subtitle">
+            <h3 class="section-subtitle">Написать нам</h3>
+          </div>
+          <div class="section__form">
+            <div class="section__form-container">
+              <form class="form"><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Имя" required="required"/></span></label><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Фамилия"/></span></label><label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="text" placeholder="Номер телефона" required="required"/></span></label><label class="field-text"><span class="field-text__input-wrap"><textarea class="field-text__input" name="comment" placeholder="Сообщение"></textarea></span></label><button class="btn btn--form" type="submit">Узнать цены</button></form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__content">
+            <p class="page-footer__copyright">© <strong>ООО «ИнертГаз»</strong> <span class="js-footer-date"></span>, все права защищены</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div><a class="to-top" id="to-top" href="#">↑</a>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
